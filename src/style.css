@@ -31,20 +31,28 @@ body {
   color: rgb(114, 112, 112);
   transition: 0.7s;
 }
+.second-cont {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 img {
   display: block;
   margin: 0 auto;
-  padding-top: 20px;
 }
 
 ul {
+  margin: 0;
+  padding-top: 10px;
+}
+
+li {
+  margin-left: 0;
   list-style: none;
   text-align: center;
-  margin: 0;
-  padding-top: 20px;
-  padding-top: 10px;
   color: rgb(107, 64, 147);
+  text-transform: capitalize;
 }
 
 h4 {
