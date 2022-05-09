@@ -6,7 +6,7 @@ function formatDate(timestamp) {
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
-    minutes = `0${hours}`;
+    minutes = `0${minutes}`;
   }
   let days = [
     "Sunday",
@@ -49,8 +49,19 @@ function displayTemprature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "20ac730f4e6b3e4ccfed8e3f88036646";
-let city = "London";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "20ac730f4e6b3e4ccfed8e3f88036646";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemprature);
+}
 
-axios.get(apiUrl).then(displayTemprature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#input-city");
+  search(cityInputElement.value);
+}
+
+search("Durham");
+
+let form = document.querySelector("#SearchCity");
+form.addEventListener("submit", handleSubmit);
