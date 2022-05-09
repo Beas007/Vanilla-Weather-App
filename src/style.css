@@ -28,13 +28,14 @@ body {
 .btn-primary:hover {
   background-color: aquamarine;
   border-color: aquamarine;
-  color: rgb(114, 112, 112);
+  color: rgb(37, 37, 37);
   transition: 0.7s;
 }
 .second-cont {
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, aquamarine, white);
 }
 
 img {
@@ -44,7 +45,7 @@ img {
 
 ul {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 li {
@@ -64,7 +65,7 @@ h4 {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 20px;
-  color: rgb(114, 112, 112);
+  color: rgb(37, 37, 37);
   font-size: 12px;
   font-weight: 200;
   line-height: 19px;
@@ -85,7 +86,7 @@ h4 {
 .descrip {
   font-style: italic;
   font-size: 14px;
-  color: rgb(114, 112, 112);
+  color: rgb(37, 37, 37);
 }
 
 .city {
@@ -96,11 +97,11 @@ h4 {
 .date {
   font-style: italic;
   font-size: 14px;
-  color: rgb(114, 112, 112);
+  color: rgb(37, 37, 37);
 }
 
 .name {
-  color: rgb(114, 112, 112);
+  color: rgb(37, 37, 37);
 }
 
 a {
