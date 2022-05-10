@@ -15,12 +15,13 @@ body {
 }
 
 .form-label {
-  display: block;
+  display: inline;
 }
 
 .btn-primary {
-  display: block;
-  margin-top: 8px;
+  display: inline;
+  margin-bottom: 15px;
+  margin-left: -16px;
   background-color: rgb(107, 64, 147);
   border-color: rgb(107, 64, 147);
 }
@@ -66,7 +67,7 @@ h4 {
   padding-top: 30px;
   padding-bottom: 20px;
   color: rgb(37, 37, 37);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 200;
   line-height: 19px;
 }
