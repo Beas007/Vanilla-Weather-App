@@ -34,24 +34,25 @@ body {
 }
 .second-cont {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
   border-radius: 10px;
-  background: linear-gradient(45deg, aquamarine, white);
+  background-color: rgb(206, 247, 234);
 }
 
 img {
   display: block;
   margin: 0 auto;
+  padding-left: 30px;
 }
 
 ul {
+  display: block;
   margin: 0;
-  padding-top: 5px;
+  list-style: none;
 }
 
 li {
   margin-left: 0;
-  list-style: none;
   text-align: center;
   color: rgb(107, 64, 147);
 }
