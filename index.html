@@ -45,12 +45,12 @@
           <div class="container p-1 shadow">
             <div class="second-cont">
           <div>                      
-            <img
+           
+              <ul><li class="clearfix main-temperature"> <img
               src=""
               alt="Clear"
               id="icon"
-              width="100"/>
-              <ul><li class="clearfix main-temperature"><span id="temperature"></span><span><small class="units"><a href="#" id="celsius-link" class="Ce">°C</a>|<a href="#" id="farenheit-link" class="Fa">°F</a></small></span
+              width="100"/><span id="temperature"></span><span><small class="units"><a href="#" id="celsius-link" class="Ce">°C</a>|<a href="#" id="farenheit-link" class="Fa">°F</a></small></span
 >
 </li>
 <li class="descrip" id="description"></li>
@@ -58,25 +58,62 @@
 <li class="date" id="day"></li>
 </ul>
 </div>
-          <h4>
+          <h4 class="container p-1">
     <span id="high"></span>°/<span id="low"></span>°<span class="line">|</span>
               Feels like <span id="feels"></span>°<span class="line">|</span>
               Humidity: <span id="humidity"></span>%<span class="line">|</span>
               Wind: <span id="wind"></span> km/hr
              </h4>
-          </div>
-          </div>
           <div class="weather-forecast">
-            <div clas="row">
-              
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-day">
+              Mon</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" width="50" alt="" />
+              <div class="weather-forecast-temp"><span class="temp-max">19</span>°/<span class="temp-min">9</span>°</div>
+              </div>
+              <div class="col-2">
+                <div class="weather-forecast-day">
+              Tue</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" width="50" alt="" />
+              <div class="weather-forecast-temp"><span class="temp-max">19</span>°/<span class="temp-min">9</span>°</div>
+              </div>
+              <div class="col-2">
+                <div class="weather-forecast-day">
+              Wed</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" width="50" alt="" />
+              <div class="weather-forecast-temp"><span class="temp-max">19</span>°/<span class="temp-min">9</span>°</div>
+              </div>
+              <div class="col-2">
+                <div class="weather-forecast-day">
+              Thu</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" width="50" alt="" />
+              <div class="weather-forecast-temp"><span class="temp-max">19</span>°/<span class="temp-min">9</span>°</div>
+              </div>
+              <div class="col-2">
+                <div class="weather-forecast-day">
+              Fri</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" width="50" alt="" />
+              <div class="weather-forecast-temp"><span class="temp-max">19</span>°/<span class="temp-min">9</span>°</div>
+              </div>
+              <div class="col-2">
+                <div class="weather-forecast-day">
+              Sat</div>
+<img src="http://openweathermap.org/img/wn/04d@2x.png" width="50" alt="" />
+              <div class="weather-forecast-temp"><span class="temp-max">19</span>°/<span class="temp-min">9</span>°</div>
+              </div>
             </div>
+            </div>
+           </div>
           </div>
         </div>
+        
         <small>
           <a href="https://github.com/Beas007/Vanilla-Weather-App"
             >Open-source code</a
           ><span class="name"> by Barira Saad
         </small>
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script> 
