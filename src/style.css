@@ -1,12 +1,68 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(244, 240, 248);
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(107, 64, 147);
+  border: 1px solid rgb(107, 64, 147);
+  border-radius: 15px;
+  text-align: center;
+  padding: 2px;
+  margin: 0 auto;
+  font-size: 10px;
+  color: white;
+}
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+.dark h4 {
+  color: white;
+  background-color: rgb(107, 64, 147);
+  border: 1px solid rgb(107, 64, 147);
+}
+
+.dark .second-cont {
+  background-color: rgb(9, 9, 9);
+}
+
+.dark .city {
+  color: aquamarine;
+}
+
+.dark .main-temperature {
+  color: aquamarine;
+}
+
+.dark .units {
+  color: aquamarine;
+}
+
+.dark .descrip {
+  color: white;
+}
+.dark .date {
+  color: white;
+}
+
+.dark .weather-forecast {
+  color: white;
+}
+
+.dark .footer {
+  color: black;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid aquamarine;
   border-radius: 5px;
+  background-color: white;
 }
 
 .weather-app-wrapper {
@@ -14,8 +70,16 @@ body {
   margin: 30px auto;
 }
 
+.second-cont {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
 .form-label {
   display: inline;
+  margin-bottom: 10px;
 }
 
 .btn-primary {
@@ -32,12 +96,6 @@ body {
   color: rgb(81, 82, 82);
   transition: 0.7s;
 }
-.second-cont {
-  margin: 0 auto;
-  padding: 0;
-  border-radius: 10px;
-  background-color: rgb(206, 247, 234);
-}
 
 img {
   display: inline;
@@ -48,7 +106,6 @@ ul {
   display: inline;
   list-style: none;
   margin: 0;
-  padding-bottom: 15px;
 }
 
 li {
@@ -65,9 +122,15 @@ h4 {
   margin: 10px auto;
   color: rgb(81, 82, 82);
   font-size: 11px;
-  font-weight: 200;
-  border: 1px solid #ffffff;
+  font-weight: normal;
+  border: 1px solid aquamarine;
+  background-color: aquamarine;
+  border-radius: 2px;
   padding-top: 15px;
+}
+
+.tem {
+  opacity: 0.6;
 }
 
 .line {
@@ -80,7 +143,6 @@ h4 {
   font-size: 60px;
   font-weight: bold;
   line-height: normal;
-  bottom: -20px;
 }
 
 .units {
@@ -93,12 +155,11 @@ h4 {
   font-style: italic;
   font-size: 14px;
   color: rgb(81, 82, 82);
-  padding-top: 10px;
 }
 
 .city {
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .date {
@@ -130,6 +191,11 @@ h4 {
   opacity: 0.6;
 }
 
+.footer {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+}
 .name {
   color: rgb(81, 82, 82);
 }

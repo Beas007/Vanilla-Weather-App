@@ -1,3 +1,7 @@
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark");
+}
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -64,7 +68,6 @@ alt="" />
 function getForecast(coordinates) {
   let apiKey = "20ac730f4e6b3e4ccfed8e3f88036646";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
