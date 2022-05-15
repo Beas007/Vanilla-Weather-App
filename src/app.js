@@ -21,6 +21,33 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+                <div class="weather-forecast-day">
+              ${day}
+              </div>
+<img 
+src="http://openweathermap.org/img/wn/04d@2x.png" 
+width="45" 
+clas="forecast-icon" 
+alt="" />
+              <div class="weather-forecast-temp">
+              <span class="temp-max">19</span>°/<span class="temp-min">9</span>°
+              </div>
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemprature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#showCity");
@@ -88,3 +115,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Durham");
+
+displayForecast();
