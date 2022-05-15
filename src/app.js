@@ -49,7 +49,7 @@ alt="" />
               <div class="weather-forecast-temp">
               <span class="temp-max">${Math.round(
                 forecastDay.temp.max
-              )}</span>°/<span class="temp-min">${Math.round(
+              )}</span>°<span class="temp-min">${Math.round(
           forecastDay.temp.min
         )}</span>°
               </div>
@@ -112,28 +112,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFarenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#Search-form");
 form.addEventListener("submit", handleSubmit);
-
-let farenheitLink = document.querySelector("#farenheit-link");
-farenheitLink.addEventListener("click", displayFarenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Durham");

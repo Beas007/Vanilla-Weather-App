@@ -85,16 +85,8 @@ h4 {
 
 .units {
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   top: -30px;
-}
-
-.Ce:hover {
-  color: rgb(81, 82, 82);
-}
-
-.Fa:hover {
-  color: rgb(81, 82, 82);
 }
 
 .descrip {
