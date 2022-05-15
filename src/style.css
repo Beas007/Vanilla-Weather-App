@@ -45,10 +45,10 @@ img {
 }
 
 ul {
-  display: block;
-  margin: 0;
+  display: inline;
   list-style: none;
-  padding-bottom: 10px;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 li {
@@ -68,7 +68,6 @@ h4 {
   font-weight: 200;
   border: 1px solid #ffffff;
   padding-top: 15px;
-  opacity: 0.6;
 }
 
 .line {
