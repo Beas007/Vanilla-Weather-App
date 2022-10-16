@@ -1,46 +1,47 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: rgb(244, 240, 248);
+  background-color: white;
 }
 
 button {
   cursor: pointer;
-  background-color: rgb(107, 64, 147);
-  border: 1px solid rgb(107, 64, 147);
-  border-radius: 15px;
+  background-color: white;
+  border: 1px solid rgb(241, 180, 130);
+  border-radius: 5px;
   text-align: center;
-  padding: 2px;
+  padding: 2px 3px;
   margin: 0 auto;
   font-size: 10px;
-  color: white;
+  color: rgb(241, 180, 130);
+  font-weight: 600;
 }
 
 .dark {
-  background-color: #222;
+  background-color: rgba(35, 6, 54, 0.849);
   color: #e6e6e6;
 }
 
 .dark h4 {
   color: white;
-  background-color: rgb(107, 64, 147);
-  border: 1px solid rgb(107, 64, 147);
+  background-color: rgb(241, 180, 130);
+  border: 1px solid rgb(241, 180, 130);
 }
 
 .dark .second-cont {
-  background-color: rgb(9, 9, 9);
+  background-color: rgba(35, 6, 54, 0.849);
 }
 
 .dark .city {
-  color: aquamarine;
+  color: rgb(193, 197, 195);
 }
 
 .dark .main-temperature {
-  color: aquamarine;
+  color: rgb(193, 197, 195);
 }
 
 .dark .units {
-  color: aquamarine;
+  color: rgb(193, 197, 195);
 }
 
 .dark .descrip {
@@ -60,7 +61,7 @@ button {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid aquamarine;
+  border: 1px solid rgb(241, 180, 130);
   border-radius: 5px;
   background-color: white;
 }
@@ -84,17 +85,18 @@ button {
 
 .btn-primary {
   display: inline;
-  margin-bottom: 15px;
-  margin-left: -16px;
-  background-color: rgb(107, 64, 147);
-  border-color: rgb(107, 64, 147);
+  padding: 8px 15px;
+  margin-left: 18px;
+  margin-top: -15px;
+  background-color: rgb(241, 180, 130);
+  border-color: rgb(241, 180, 130);
   font-size: 12px;
 }
 
 .btn-primary:hover {
-  background-color: aquamarine;
-  border-color: aquamarine;
-  color: rgb(81, 82, 82);
+  background-color: white;
+  border-color: rgb(193, 197, 195);
+  color: rgba(35, 6, 54, 0.849);
   transition: 0.7s;
 }
 
@@ -111,7 +113,7 @@ ul {
 
 li {
   text-align: center;
-  color: rgb(107, 64, 147);
+  color: rgb(241, 180, 130);
 }
 
 li:first-letter {
@@ -124,8 +126,8 @@ h4 {
   color: rgb(81, 82, 82);
   font-size: 11px;
   font-weight: normal;
-  border: 1px solid aquamarine;
-  background-color: aquamarine;
+  border: 1px solid rgb(241, 180, 130);
+  background-color: rgb(241, 180, 130);
   border-radius: 2px;
   padding-top: 15px;
 }
@@ -135,7 +137,7 @@ h4 {
 }
 
 .line {
-  color: rgb(107, 64, 147);
+  color: rgb(241, 180, 130);
   opacity: 0.6;
 }
 
@@ -172,7 +174,7 @@ h4 {
 .weather-forecast {
   padding: 15px;
   text-align: center;
-  color: rgb(107, 64, 147);
+  color: rgb(241, 180, 130);
 }
 
 .weather-forecast-day {
@@ -198,11 +200,11 @@ h4 {
   text-align: center;
 }
 .name {
-  color: rgb(81, 82, 82);
+  color: black;
 }
 
 a {
   text-decoration: none;
-  color: rgb(107, 64, 147);
+  color: rgb(241, 180, 130);
   font-weight: bold;
 }
